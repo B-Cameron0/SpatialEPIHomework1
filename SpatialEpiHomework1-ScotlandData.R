@@ -5,5 +5,16 @@ ratio<-lip$observed/lip$expected
 ratio
 
 hist(ratio)
+ls() 
 
-ls()
+summary(ratio)
+summary(lip)
+
+var(lip)
+
+lratio<-log(ratio)
+hist(lratio)
+
+plot(lip$longitude,lip$latitude)
+
+plot(lip$AFF,lratio)
